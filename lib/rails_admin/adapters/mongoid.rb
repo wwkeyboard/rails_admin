@@ -281,6 +281,7 @@ module RailsAdmin
           "Mongoid::Boolean"        => { :type => :boolean },
           "Boolean"        => { :type => :boolean },
           "BSON::ObjectId" => { :type => :bson_object_id, :serial? => (name == primary_key) },
+          "Coordinate"          => { :type => :serialized },
           "Moped::BSON::ObjectId" => { :type => :bson_object_id, :serial? => (name == primary_key) },
           "Date"           => { :type => :date },
           "DateTime"       => { :type => :datetime },
